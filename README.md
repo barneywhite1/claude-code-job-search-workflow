@@ -33,6 +33,14 @@ The ideas I found most useful:
 - Pointed the search at UK-relevant sources and tracked applications in a CSV, mirrored to Notion with `/notion-sync`.
 - Used Git to version my own changes, kept strictly local so personal data never leaves my machine.
 
+## Dashboard
+
+The `/html-report` command turns the application tracker into an offline dashboard: status counts, charts by status, sector and channel, a funnel, and a filterable table. The screenshot below uses **fictional example data**, not my real applications, in the same layout.
+
+![Job search dashboard built from fictional example data](docs/screenshots/dashboard.png)
+
+The page itself is in [`examples/dashboard`](examples/dashboard/example-dashboard.html); download it and open it in a browser.
+
 ## Examples (fictional)
 
 - [`examples/example_profile.md`](examples/example_profile.md): the shape of a profile file, with an invented candidate.
