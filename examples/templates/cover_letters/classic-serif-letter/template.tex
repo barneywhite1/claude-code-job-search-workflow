@@ -1,0 +1,49 @@
+%% Cover letter template: classic-serif-letter
+%% One page, single column, plain Times New Roman, left-aligned, no bullets.
+%% Replace every [PLACEHOLDER]. Compile with lualatex (see TEMPLATE.md).
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,top=0.9in,bottom=0.8in,left=1in,right=1in]{geometry}
+\usepackage{fontspec}
+% Times New Roman from the Windows font folder (loaded by file so no font database lookup is needed)
+\setmainfont{times.ttf}[Path=C:/Windows/Fonts/,BoldFont=timesbd.ttf,ItalicFont=timesi.ttf,BoldItalicFont=timesbi.ttf]
+\usepackage[hidelinks,pdftitle={[YOUR_NAME] - Cover Letter}]{hyperref}
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{0563C1}
+% Visible link style: blue and underlined, clickable
+\newcommand{\link}[2]{\href{#1}{\textcolor{linkblue}{\underline{#2}}}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{9pt}
+\raggedright
+
+\begin{document}
+
+\begin{center}
+{\bfseries [YOUR_NAME]}\\[1pt]
+{\small [YOUR_CITY]}\\[1pt]
+{\small \link{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} | [YOUR_PHONE] | \link{[YOUR_LINKEDIN_URL]}{LinkedIn}}
+\end{center}
+
+\vspace{2pt}
+[DATE]
+
+Dear [SALUTATION],
+
+[Opening paragraph: the role, one credential, and the hook.]
+
+[Core evidence paragraph: your strongest experience, quantified.]
+
+[Development paragraph: society, certification, reading, self-study.]
+
+[Breadth paragraph: secondary experience and transferable traits.]
+
+[Why this firm: two or three verified, specific facts.]
+
+[Short close.]
+
+Yours sincerely,\\[2pt]
+[YOUR_NAME]
+
+\end{document}
